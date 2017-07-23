@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="heading">Burgers
+    </div>
+    <div class="inputBurger">
+        <form class="burgForm" action="/" method="POST">
+            Enter a type of Burger:
+            <input type="text" name="name" class="burgText">
+            <br>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
+    <div class="burgerContainer burgerWell">
+        <h2>Burgers yet to be Devoured</h2>
+        <ul>
+            {{#each burgers}} {{#unless this.devoured}}
+               <div class="burgerCell">
+            <li>
+             
+                {{this.burger_name}}
+                <form action="/{{this.id}}?_method=PUT" method="POST">
+                    <input type="hidden" name="devoured" value="true">
+                    <button type="submit">EAT!</button>
+                </form>
+               
+            </li>
+             </div>
+            {{/unless}} {{/each}}
+        </ul>
+    </div>
+    <div class="eatenContainer burgerWell">
+        <h2>Burgers Devoured</h2>
+        <ul>
+            {{#each burgers}}
+            {{#if this.devoured}}
+              <div class="burgerCell">
+            <li>
+              
+                {{this.burger_name}}
+               
+            </li>
+             </div>
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+</div>
