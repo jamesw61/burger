@@ -3,7 +3,6 @@
 }
 
 body {
-    /*border-style: solid;*/
     background-image: url("../images/pic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,10 +14,8 @@ body {
 .container {
     display: grid;
     grid-gap: 10px;
-    /*grid-template-columns: 100px 100px auto 100px 100px;*/
     grid-template-columns: repeat(9,1fr); 
     grid-template-rows: 50px 100px auto 100px auto 100px 100px auto;
-    /*border-style: solid;*/
 }
 
 .testing {
@@ -26,13 +23,11 @@ body {
 }
 
 .heading {
-    /*border-style: solid;*/
     color: white;
     grid-column-start: 4;
     grid-column-end: 7;
     text-align: center;
     grid-row-start: 2;
-    /*grid-row-end: span 1;*/
     text-shadow: 2px 2px 4px #000000;
     font-size: 80px;
 }
@@ -45,12 +40,10 @@ body {
     grid-column-end: 8;
     grid-row-start: 3;
     text-align: center;
-    /*border-style: solid;*/
     padding-top: 10px
 }
 
 .burgText {
-    /*height: 40px;*/
     margin-top: 10px;
     font-size: 24px;
 }
@@ -58,13 +51,11 @@ body {
 .burgerContainer {
 	grid-column-start: 2;
 	grid-column-end: 5;
-    /*border-style: solid;*/   
 }
 
 .eatenContainer {	
 	grid-column-start: 6;
 	grid-column-end: 9;
-    /*border-style: solid;	*/
 }
 
 .burgerWell {
@@ -83,22 +74,17 @@ body {
 	text-align: left;
     font-size: 24px;
     padding: 10px;
-	/*border-style: solid;*/
-	border-color: green;
+    width: 85%;
+    margin: 0 auto;
     margin-bottom: 10px;
-    max-width: 80%;
 	grid-column-start: 2;
 	display: grid;
 	grid-template-columns: 3fr 1fr;
-    grid-gap: 2px;
-
 	background-color:rgba(0,0,0,0.4);
 	border-radius: 10px;
 }
 
 .burgerName {
-    /*border-style: solid;*/
-    border-color: red;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -110,15 +96,8 @@ body {
 	font-size: 24px;
 }
 
-.eat {
-    /*border-style: solid;*/
-    border-color: blue;
-    /*width: 60px;*/
-	grid-column-start: 2;
-    grid-row: 1;
-}
-
 .eatBtn {
     font-size: 24px;
+    border-radius: 10px;
 }
 

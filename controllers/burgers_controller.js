@@ -9,7 +9,7 @@ router.get("/", function(req, res) {
     var hbsObject = {
       burgers: data
     };
-    res.render("temp", hbsObject);
+    res.render("index", hbsObject);
   });
 });
 
@@ -31,7 +31,7 @@ router.put("/:id", function(req, res) {
 
 router.delete("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
-
+  console.log(condition);
   burger.deleteOne(condition, function() {
     res.redirect("/");
   });
