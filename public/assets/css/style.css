@@ -3,7 +3,7 @@
 }
 
 body {
-    border-style: solid;
+    /*border-style: solid;*/
     background-image: url("../images/pic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,7 +16,7 @@ body {
     display: grid;
     grid-gap: 10px;
     /*grid-template-columns: 100px 100px auto 100px 100px;*/
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-columns: repeat(9,1fr); 
     grid-template-rows: 50px 100px auto 100px auto 100px 100px 100px 100px auto;
     /*border-style: solid;*/
 }
@@ -26,7 +26,7 @@ body {
 }
 
 .heading {
-    border-style: solid;
+    /*border-style: solid;*/
     color: white;
     grid-column-start: 4;
     grid-column-end: 7;
@@ -82,20 +82,21 @@ body {
 	text-align: left;
     font-size: 24px;
     padding: 10px;
-	border-style: solid;
+	/*border-style: solid;*/
 	border-color: green;
     margin-bottom: 10px;
     max-width: 80%;
 	grid-column-start: 2;
 	display: grid;
 	grid-template-columns: 3fr 1fr;
+    grid-gap: 2px;
 
 	background-color:rgba(0,0,0,0.4);
 	border-radius: 10px;
 }
 
 .burgerName {
-    border-style: solid;
+    /*border-style: solid;*/
     border-color: red;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -109,12 +110,11 @@ body {
 }
 
 .eat {
-    border-style: solid;
+    /*border-style: solid;*/
     border-color: blue;
-    width: 60px;
-    /*float: right;*/
+    /*width: 60px;*/
 	grid-column-start: 2;
     grid-row: 1;
-    
+
 }
 
