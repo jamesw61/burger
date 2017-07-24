@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     border-style: solid;
     background-image: url("../images/pic.jpg");
@@ -6,19 +10,26 @@ body {
     background-position: center;
 }
 
+
+
 .container {
     display: grid;
+    grid-gap: 10px;
     /*grid-template-columns: 100px 100px auto 100px 100px;*/
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
-    grid-template-rows: 50px 100px 100px 100px auto 100px 100px 100px 100px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 50px 100px auto 100px auto 100px 100px 100px 100px auto;
     /*border-style: solid;*/
 }
 
+.testing {
+    background-color: red;
+}
+
 .heading {
-    /*border-style: solid;*/
+    border-style: solid;
     color: white;
     grid-column-start: 4;
-    grid-column-end: 8;
+    grid-column-end: 7;
     text-align: center;
     grid-row-start: 2;
     /*grid-row-end: span 1;*/
@@ -30,7 +41,7 @@ body {
     color: white;
     text-shadow: 2px 2px 4px #000000;
     font-size: 30px;
-    grid-column-start: 4;
+    grid-column-start: 3;
     grid-column-end: 8;
     grid-row-start: 3;
     text-align: center;
@@ -45,18 +56,20 @@ body {
 }
 
 .burgerContainer {
-	grid-column-start: 3;
+	grid-column-start: 2;
 	grid-column-end: 5;
     /*border-style: solid;*/   
 }
 
 .eatenContainer {	
-	grid-column-start: 7;
+	grid-column-start: 6;
 	grid-column-end: 9;
     /*border-style: solid;	*/
 }
 
 .burgerWell {
+    border-style: solid;
+    border-color: black;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 4px #000000;
@@ -67,15 +80,26 @@ body {
 
 .burgerCell {
 	text-align: left;
-	/*border-style: solid;*/
-	/*color: white;*/
+    font-size: 24px;
+    padding: 10px;
+	border-style: solid;
+	border-color: green;
     margin-bottom: 10px;
     max-width: 80%;
 	grid-column-start: 2;
 	display: grid;
-	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-columns: 3fr 1fr;
+
 	background-color:rgba(0,0,0,0.4);
 	border-radius: 10px;
+}
+
+.burgerName {
+    border-style: solid;
+    border-color: red;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
 }
 
 .submit {
@@ -84,11 +108,13 @@ body {
 	font-size: 24px;
 }
 
-.burgerName {
-	grid-column: 2 / 4;
+.eat {
+    border-style: solid;
+    border-color: blue;
+    width: 60px;
+    /*float: right;*/
+	grid-column-start: 2;
+    grid-row: 1;
+    
 }
 
-.eat {
-	grid-column-start: 4;
-    max-height: 50%;
-}
