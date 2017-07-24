@@ -17,7 +17,7 @@ body {
     grid-gap: 10px;
     /*grid-template-columns: 100px 100px auto 100px 100px;*/
     grid-template-columns: repeat(9,1fr); 
-    grid-template-rows: 50px 100px auto 100px auto 100px 100px 100px 100px auto;
+    grid-template-rows: 50px 100px auto 100px auto 100px 100px auto;
     /*border-style: solid;*/
 }
 
@@ -76,6 +76,7 @@ body {
     background-color:rgba(0,0,0,0.3);
     border-radius: 25px;
     grid-row-start: 5;
+    min-height: 600px;
 }
 
 .burgerCell {
@@ -115,6 +116,9 @@ body {
     /*width: 60px;*/
 	grid-column-start: 2;
     grid-row: 1;
+}
 
+.eatBtn {
+    font-size: 24px;
 }
 

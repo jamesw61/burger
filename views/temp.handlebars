@@ -12,7 +12,7 @@
     </div>
     <div class="inputBurger">
         <form class="burgForm" action="/" method="POST">
-            Enter a type of Burger:
+            Enter a type of Burger:<br>
             <input type="text" name="name" class="burgText">
             <input type="submit" value="Submit" class="submit">
         </form>
@@ -24,7 +24,6 @@
             <div class="burgerCell">
           <!--       <div class="testing">1</div>
                 <div class="testing">2</div> -->
-
                 <li>
                     <div class="burgerName">
                         {{this.burger_name}}
@@ -33,7 +32,7 @@
                     <div class="eat">
                         <form action="/{{this.id}}?_method=PUT" method="POST">
                             <input type="hidden" name="devoured" value="true">
-                            <button type="submit">EAT!</button>
+                            <button type="submit" class="eatBtn">Devour!</button>
                         </form>
                     </div>
                 
@@ -45,10 +44,16 @@
         <h2>Burgers Devoured</h2>
         <ul>
             {{#each burgers}} {{#if this.devoured}}
-            <div class="burgerCell">
+            <div class="burgerCell" ondblclick="/{{this.id}}?_method=DELETE" method="POST">
                 <li>
                     {{this.burger_name}}
                 </li>
+                 <div class="del">
+                        <form action="/{{this.id}}?_method=DELETE" method="POST">
+                            <input type="hidden" name="devoured" value="true">
+                            <button type="submit" class="eatBtn">Delete</button>
+                        </form>
+                    </div>
             </div>
             {{/if}} {{/each}}
         </ul>
