@@ -1,7 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
-var path = require("path"); //what does this do? it was in the cats app
 
 var port = process.env.PORT || 3006;
 

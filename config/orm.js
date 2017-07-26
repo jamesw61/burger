@@ -1,6 +1,6 @@
 var connection = require("../config/connection.js");
 
-// Helper function for SQL syntax. - copied from Activity 22
+// Helper function for SQL syntax. - copied from cat Activity 22
 function printQuestionMarks(num) {
   var arr = [];
 
@@ -11,7 +11,7 @@ function printQuestionMarks(num) {
   return arr.toString();
 }
 
-// Helper function for SQL syntax.  - copied from Activity 22
+// Helper function for SQL syntax.  - copied from cat Activity 22
 function objToSql(ob) {
   var arr = [];
 
